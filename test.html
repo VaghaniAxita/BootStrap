@@ -1,96 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <script src="./js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <!-- image -->
-      <div class="img">
-        <img src="https://cdn.pixabay.com/photo/2018/02/18/19/17/panorama-3163143_1280.jpg" alt="" class="img-fluid">
-      </div><br>
 
-      <!-- grid view -->
+    <style>
+        /* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.footer {
+  max-width: 1280px;
+  width: 100%;
+  background:rgb(3, 111, 183);
+  border-radius: 6px;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+    </style>
+   
+</head>
+
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-light" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger  text-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- image -->
+    <div class="img">
+        <img src="https://cdn.pixabay.com/photo/2018/02/18/19/17/panorama-3163143_1280.jpg" height="100%" width="100%" class="img-fluid">
+    </div><br>
+
+    <!-- grid view -->
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-2"><img
-                    src="https://cdn.pixabay.com/photo/2016/08/27/14/38/mountains-1624284_1280.jpg"
+        <div class="row ">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2015/08/25/22/18/bridge-907770_1280.jpg" alt=""
+                    class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2024/01/24/11/34/winter-8529421_1280.jpg" alt=""
+                    class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2023/06/18/12/17/meadow-8071932_1280.jpg" alt=""
+                    class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2017/11/18/19/58/cabin-2961098_1280.jpg" alt=""
+                    class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2017/12/10/19/46/fuchs-3010691_1280.jpg" alt=""
+                    class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2019/05/09/15/08/jungle-4191340_1280.jpg" alt=""
+                    class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img
+                    src="https://cdn.pixabay.com/photo/2018/06/25/14/27/background-image-3497025_1280.jpg" alt=""
+                    class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2018/05/11/15/18/background-3390802_1280.jpg"
                     alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2017/08/27/15/09/moraine-lake-2686353_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2015/08/25/22/18/bridge-907770_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2024/01/24/11/34/winter-8529421_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2023/06/18/12/17/meadow-8071932_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2017/11/18/19/58/cabin-2961098_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2017/12/10/19/46/fuchs-3010691_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2019/05/09/15/08/jungle-4191340_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2018/06/25/14/27/background-image-3497025_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2018/05/11/15/18/background-3390802_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2024/02/12/08/47/winter-8568151_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
-            <div class="col-2"><img
-                src="https://cdn.pixabay.com/photo/2020/05/13/18/58/nature-5168551_1280.jpg"
-                alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2024/02/12/08/47/winter-8568151_1280.jpg" alt=""
+                    class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2020/05/13/18/58/nature-5168551_1280.jpg" alt=""
+                    class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2015/07/17/06/08/styggkaerret-848532_1280.jpg"
+                    alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 .col-xs-12 "><img src="https://cdn.pixabay.com/photo/2018/05/09/18/36/avenue-3385832_1280.jpg"
+                    alt="" class=" rounded mx-auto d-block img-thumbnail"></div>
         </div>
     </div>
-
+    <br><br>
     <!-- footer -->
+    <div>
+        <section class="footer">
+            <div class="footer-row">
+              <div class="footer-col">
+                <h4>Info</h4>
+                <ul class="links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Compressions</a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Collection</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="links">
+                  <li><a href="#">Free Designs</a></li>
+                  <li><a href="#">Latest Designs</a></li>
+                  <li><a href="#">Themes</a></li>
+                  <li><a href="#">Popular Designs</a></li>
+                  <li><a href="#">Art Skills</a></li>
+                  <li><a href="#">New Uploads</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="links">
+                  <li><a href="#">Customer Agreement</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">GDPR</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Media Kit</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>
+                  Subscribe to our newsletter for a weekly dose
+                  of news, updates, helpful tips, and
+                  exclusive offers.
+                </p>
+                <form action="#">
+                  <input type="text" placeholder="Your email" required>
+                  <button type="submit">SUBSCRIBE</button>
+                </form>
+                <div class="icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+
 </body>
+
 </html>
