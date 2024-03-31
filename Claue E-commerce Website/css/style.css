@@ -138,7 +138,8 @@ a {
     padding-left: 15px;
     padding-right: 15px;
 }
-.w-25{
+
+.w-25 {
     width: 25%;
     padding-left: 15px;
     padding-right: 15px;
@@ -155,9 +156,10 @@ a {
 
 /* --------------------Header Css Start----------------------- */
 
-.main{
+.main {
     position: relative;
 }
+
 .top_info {
     background-color: #f5f6f8;
     font-size: 12px;
@@ -211,7 +213,7 @@ a {
 }
 
 .drop li a {
-    padding: 5px 3px; 
+    padding: 5px 3px;
     color: var(--gray);
     display: flex;
     align-items: center;
@@ -241,7 +243,7 @@ a {
     margin-top: 15px;
 }
 
-.mega_menu{
+.mega_menu {
     background-color: var(--white);
     width: 100%;
     position: absolute;
@@ -253,23 +255,29 @@ a {
     transition: .4s;
     z-index: 2;
 }
-.mega_menu li{
+
+.mega_menu li {
     border-bottom: 1px solid #eee;
 }
-.mega_menu ul li a{
+
+.mega_menu ul li a {
     padding: 5px 10px;
 }
-.mega_menu ul{
+
+.mega_menu ul {
     width: 25%;
 }
-.main_menu li:hover .mega_menu{
+
+.main_menu li:hover .mega_menu {
     opacity: 1;
     visibility: visible;
 }
-.mega_menu .test{
+
+.mega_menu .test {
     color: #222222;
     font-weight: 600;
 }
+
 .main_menu li {
     position: relative;
     padding: 19px 19px;
@@ -280,9 +288,11 @@ a {
     background-color: var(--white);
     transition: .5s;
 }
-li.p_unset{
+
+li.p_unset {
     position: unset;
 }
+
 .sub_menu {
     color: var(--gray);
     background-color: var(--white);
@@ -805,9 +815,11 @@ li.p_unset{
     z-index: 4;
     transition: .4s;
 }
-#test2 .box .img_part{
+
+#test2 .box .img_part {
     overflow: hidden;
 }
+
 #test2 .box:hover .btn {
     opacity: 1;
     visibility: visible;
@@ -817,14 +829,17 @@ li.p_unset{
     background-color: #222222;
     color: var(--white);
 }
-#test2 .box .img_part img{
+
+#test2 .box .img_part img {
     overflow: hidden;
 }
-#test2 .box .img_part{
+
+#test2 .box .img_part {
     position: relative;
     overflow: hidden;
     display: block;
 }
+
 #test2 .box .img_part::before {
     width: 100%;
     height: 100%;
@@ -1059,9 +1074,11 @@ li.p_unset{
     overflow: hidden;
     padding-bottom: 3px;
 }
-.pro .box .normal{
-    width: 100% ;
+
+.pro .box .normal {
+    width: 100%;
 }
+
 .pro .box .hover {
     width: 100%;
     position: absolute;
@@ -1135,18 +1152,21 @@ li.p_unset{
     background-color: #222222;
     color: var(--white);
 }
-.pro .box .img_part img{
+
+.pro .box .img_part img {
     transition: .5s;
 }
-.pro .box .img_part img:hover{
+
+.pro .box .img_part img:hover {
     transform: scale(1.2);
 }
 
-.pro .box .img_part{
+.pro .box .img_part {
     overflow: hidden;
     position: relative;
     display: block;
 }
+
 .pro .box .img_part::before {
     width: 100%;
     height: 100%;
@@ -1200,15 +1220,17 @@ li.p_unset{
 }
 
 .pro .option .part11 {
-    background-color: #0ea8f0 ;
+    background-color: #0ea8f0;
 }
 
 .pro .option .part12 {
     background-color: #9810e6;
 }
-.pro .option .part15{
+
+.pro .option .part15 {
     background-color: black;
 }
+
 .pro .option .part16 {
     background-color: #969696;
 }
@@ -1243,32 +1265,38 @@ li.p_unset{
     top: 48%;
     right: 34%;
 }
-.blog .box{
+
+.blog .box {
     width: 370px;
     overflow: hidden;
     transition: opacity 0.5s, transform 2s cubic-bezier(0, 0, 0.44, 1.18), -webkit-transform 2s cubic-bezier(0, 0, 0.44, 1.18);
 }
-.blog .box img{
+
+.blog .box img {
     width: 100%;
 }
-.blog .box .content h3 a{
+
+.blog .box .content h3 a {
     color: #222;
     font-size: 16px;
     font-weight: 600;
     transition: .4s;
 }
-.blog .box .content span{
+
+.blog .box .content span {
     color: #222;
 }
-.blog .box .content p{
+
+.blog .box .content p {
     margin-top: 10px;
 }
 
-.blog .box:hover img{
+.blog .box:hover img {
     transform: scale(1.1);
     transition: opacity 0.5s, transform 2s cubic-bezier(0, 0, 0.44, 1.18), -webkit-transform 2s cubic-bezier(0, 0, 0.44, 1.18);
 }
-.blog .box .content h3 a:hover{
+
+.blog .box .content h3 a:hover {
     color: var(--blue);
 }
 
@@ -1285,7 +1313,7 @@ li.p_unset{
     height: 2px;
     background: #222222;
     top: 48%;
-    left: 34%;
+    left: 31%;
 }
 
 .head4 h3::after {
@@ -1295,33 +1323,40 @@ li.p_unset{
     height: 2px;
     background: #222222;
     top: 48%;
-    right: 34%;
+    right: 31%;
 }
-#test4 .box{
+
+#test4 .box {
     width: 253px;
     position: relative;
 }
-#test4 .box img{
+
+#test4 .box img {
     width: 100%;
 }
-#test4 .box .content{
+
+#test4 .box .content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 4;
 }
-#test4 .box .content .heart{
+
+#test4 .box .content .heart {
     margin-right: 15px;
 }
-#test4 .box .content i{
+
+#test4 .box .content i {
     margin-right: 5px;
     color: var(--white);
 }
-#test4 .box .content span{
+
+#test4 .box .content span {
     color: var(--white);
 }
-#test4 .box::before{
+
+#test4 .box::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -1335,11 +1370,14 @@ li.p_unset{
     visibility: hidden;
     transition: .4s;
 }
-#test4 .box:hover::before{
+
+/* rgba(0, 0, 0, 0.5) */
+#test4 .box:hover::before {
     opacity: 1;
     visibility: visible;
 }
- .owl-theme .owl-nav {
+
+.owl-theme .owl-nav {
     margin: 0;
     position: absolute;
     top: 40%;
@@ -1349,7 +1387,7 @@ li.p_unset{
     width: 100%;
 }
 
- .owl-theme .owl-nav button {
+.owl-theme .owl-nav button {
     height: 40px;
     width: 40px;
     border-radius: 50% !important;
@@ -1393,66 +1431,77 @@ li.p_unset{
 /* ---------------------------Message Css Start--------------------------------------------- */
 
 
-.message .box .icon{
+.message .box .icon {
     font-size: 36px;
     padding-right: 20px;
     line-height: 100%;
 }
-.message .box .content h6{
+
+.message .box .content h6 {
     color: #222222;
     font-size: 15px;
-    margin-bottom:5px ;
+    margin-bottom: 5px;
 }
 
 /* ---------------------------Message Css End--------------------------------------------- */
 
 /* ---------------------------Footer Css Start--------------------------------------------- */
 
-.footer{
+.footer {
     background-color: #f6f6f8;
     border-top: 1px solid #f6f6f8;
 }
-.w-20{
+
+.w-20 {
     width: 20%;
     padding-left: 15px;
     padding-right: 15px;
 }
-.footer .box img{
+
+.footer .box img {
     width: 96px;
     margin-bottom: 25px;
 }
-.footer .box li a i{
+
+.footer .box li a i {
     font-size: 24px;
     color: var(--gray);
     padding-right: 15px;
 }
-.footer .box li{
+
+.footer .box li {
     margin-bottom: 10px;
 }
-.footer .box li a{
+
+.footer .box li a {
     color: var(--gray);
     line-height: 14px;
     transition: .4s;
 }
-.footer .icon li a i{
+
+.footer .icon li a i {
     font-size: 16px;
     transition: .4s;
 }
-.footer .icon li a i:hover{
+
+.footer .icon li a i:hover {
     color: var(--blue);
 }
+
 .footer li a:hover {
     color: var(--blue);
 }
 
-.footer .box h3{
+.footer .box h3 {
     color: #222;
     margin-bottom: 30px;
 }
-.footer .box .item li{
+
+.footer .box .item li {
     padding-bottom: 10px;
 }
-.footer .box .block{
+
+.footer .box .block {
     width: 130%;
     border: 1px solid var(--gray);
     border-radius: 50px;
@@ -1460,14 +1509,16 @@ li.p_unset{
     margin-top: 3px;
     position: relative;
 }
-.footer .box .form-sub input{
+
+.footer .box .form-sub input {
     height: 39px;
     border: none;
     padding: 0 10px;
     background-color: transparent;
     border-radius: 50px;
 }
-.footer .box .action .subscribe{
+
+.footer .box .action .subscribe {
     position: absolute;
     top: 5%;
     left: 58%;
@@ -1477,7 +1528,8 @@ li.p_unset{
     border: 2px solid #222;
     border-radius: 40px;
 }
-.footer .box .privacy{
+
+.footer .box .privacy {
     margin-top: 30px;
     width: 197px;
     line-height: 24px;
@@ -1485,5 +1537,3 @@ li.p_unset{
 
 
 /* ---------------------------Footer Css End--------------------------------------------- */
-
-
